@@ -18,5 +18,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4   # REQUIRED
+
       - name: Show Version
         run: echo "Build version is ${{ needs.build.outputs.build_version }}"
+
+      - name: Run Composite Action 🚀
+        uses: ./.github/actions/setup-and-greet
+        with:
+          name: Rahul
+          language: en
