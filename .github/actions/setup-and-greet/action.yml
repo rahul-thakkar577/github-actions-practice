@@ -1,17 +1,17 @@
 name: Setup and Greet
-description: A simple composite action to greet user and show system info
+description: Greet user and show system info
 
 inputs:
   name:
-    description: "Name of the user"
+    description: "User name"
     required: true
   language:
-    description: "Language for greeting"
+    description: "Language"
     default: en
 
 outputs:
   greeted:
-    description: "Whether greeting was successful"
+    description: "Greeting status"
     value: "true"
 
 runs:
