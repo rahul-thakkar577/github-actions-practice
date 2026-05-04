@@ -1,4 +1,4 @@
-name: PR Lifecycle أحداث
+name: PR Lifecycle 
 
 on:
   pull_request:
